@@ -1,0 +1,131 @@
+{% extends "header.html" %}
+{% block content %}
+
+<!-- Page Header-->
+<div class="container position-relative px-4 px-lg-5 pt-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center ">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading text-center">
+        {% if msg_sent%}
+            <h1 class="heading">Message Sent Successfully.</h1>
+        {% else %}
+            <h1 class= "heading">Contact Me</h1>
+            <hr class="w-25 mx-auto" style="border-width: 3px; border-color: whitesmoke">
+
+        {% endif %}  
+          <span class="subheading pt-4 h3">Have questions? I have answers.</span>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Main Content-->
+<main class="mb-4">
+    <div class="container px-4 px-lg-5 py-3">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <p class = "body-text">
+            Want to get in touch? Fill out the form below to send me a message and
+            I will get back to you as soon as possible!
+          </p>
+          <div class="my-5">
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * Simplified SB Contact Form for the Tutorial* *-->
+            <!-- Solution: change url for the action to 'contact'-->
+            <form
+            id="contactForm"
+            name="sentMessage"
+            action="{{ url_for('contact') }}"
+            method="post"
+            class="needs-validation"
+            novalidate
+          >
+            <!-- Name input field -->
+            <div class="form-floating mb-4">
+              <input
+                class="form-control shadow-sm"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter your name..."
+                required
+              />
+              <label for="name" class="ps-3">Name</label>
+              <div class="invalid-feedback ps-3">
+                Please enter your name.
+              </div>
+            </div>
+          
+            <!-- Email input field -->
+            <div class="form-floating mb-4">
+              <input
+                class="form-control shadow-sm"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter your email..."
+                required
+              />
+              <label for="email" class="ps-3">Email address</label>
+              <div class="invalid-feedback ps-3">
+                Please enter a valid email address.
+              </div>
+            </div>
+          
+            <!-- Message input field -->
+            <div class="form-floating mb-4">
+              <textarea
+                class="form-control shadow-sm"
+                id="message"
+                name="message"
+                placeholder="Enter your message here..."
+                required
+                style="height: 150px"
+              ></textarea>
+              <label for="message" class="ps-3">Message</label>
+              <div class="invalid-feedback ps-3">
+                Please enter your message.
+              </div>
+            </div>
+          
+            <!-- Submit button -->
+            <div class="subheading text-left">
+              <button
+                class="btn btn-dark btn-lg shadow-sm text-uppercase px-4 py-2"
+                id="submitButton"
+                type="submit"
+              >
+                Send 
+              </button>
+            </div>
+          </form>
+          
+
+            <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function () {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                  .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                      if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                      }
+
+                      form.classList.add('was-validated')
+                    }, false)
+                  })
+              })()
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+{% endblock %}

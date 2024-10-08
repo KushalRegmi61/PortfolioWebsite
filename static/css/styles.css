@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+
+  --imp-text-color: #c770f0;
+}
+
+
+
+.nav-link{
+  font-family: "Open Sans", serif;
+  font-style: normal;
+  font-size: 0.96rem; /* Increased by 20% from 0.8rem */
+  font-weight: 800;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.heading{
+  font-family: serif;
+  font-style: normal;
+  font-size: 2rem; /* Increased by 20% from 1.5rem */
+  font-weight: bold;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.body-text{
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 1.2rem; /* Increased by 20% from 1rem */
+  font-weight: 400;
+  letter-spacing: 0.0625em;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.subheading{
+  font-family: serif;
+  font-style: normal;
+  font-size: 1.5rem; /* Increased by 20% from 1.25rem */
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

@@ -1,0 +1,81 @@
+{% extends "header.html" %}
+{% block content %}
+
+<!-- Introduction Section -->
+<div class="container text-center py-5 ">
+        <h3 class="heading font-weight-light pt-2" style="font-family: 'Serif'; font-weight: bold;">Here are a few projects I've worked on lately.</h3>
+        <hr class="w-25 mx-auto" style="border-width: 3px; border-color: whitesmoke">
+        <p class="body-text " style="text-align: center;">Each project showcases my skills and experience in web development, design, and programming. Feel free to explore and click on any project to learn more about it.</p>
+    </div>
+
+<!-- Main Content -->
+<div class="album py-4 ">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm" style="height: 500px;">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="../static/assets/img/blog.gif" alt="Thumbnail">
+                    <div class="card-body">
+                        <h4 class="heading text-center">Blog Website</h4>
+                        <p class="body-text card-text text-justify">A blog site using Flask, SQLAlchemy, HTML, and CSS with CRUD operations and user authentication.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="btn-group pb-2">
+                                <a class="body-text btn btn-sm btn-outline-secondary mx-2 px-2 rounded" href="https://github.com/KushalRegmi61/BlogWebsite" target="_blank">
+                                    <i class="fab fa-github"></i> Github
+                                </a>
+                                <button type="button" class="body-text btn btn-sm btn-outline-secondary mx-2 px-2 rounded">
+                                    <i class="fas fa-desktop"></i> Demo
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm" style="height: 500px;">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo">
+                        <h4 class="heading text-center ">100 Days: Python</h4>
+                        <p class="body-text card-text text-justify">This repository was created while learning Python and contains 100 Python projects completed over 100 days.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="btn-group pb-2">
+                                <a class="body-text btn btn-sm btn-outline-secondary mx-2 px-2 rounded" href="https://github.com/KushalRegmi61/100_DAYS_OF_LEARNING_PYTHON" target="_blank">
+                                    <i class="fab fa-github"></i> Github
+                                </a>
+                                <button type="button" class="body-text btn btn-sm btn-outline-secondary mx-2 px-2 rounded">
+                                    <i class="fas fa-desktop"></i> Demo
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            <div class="col">
+                <div class="card shadow-sm" style="height: 500px;">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                    <div class="card-body">
+                        <h4 class="heading text-center">Blog Website</h4>
+                        <p class="body-text card-text text-justify">A blog website built using Flask, SQLAlchemy, HTML, and CSS. It allows users to create, edit, and delete blog posts, and includes user authentication and authorization features.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="btn-group pb-2">
+                                <a class="body-text btn btn-sm btn-outline-secondary mx-2 px-2 rounded" href="https://github.com/KushalRegmi61/BlogWebsite" target="_blank">
+                                    <i class="fab fa-github"></i> Github
+                                </a>
+                                <button type="button" class="body-text btn btn-sm btn-outline-secondary mx-2 px-2 rounded">
+                                    <i class="fas fa-desktop"></i> Demo
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other cards -->
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
